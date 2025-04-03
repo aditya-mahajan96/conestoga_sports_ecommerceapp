@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "397646487242",
+    "firebase_url": "https://ecommerceapp-3f27d-default-rtdb.firebaseio.com",
+    "project_id": "ecommerceapp-3f27d",
+    "storage_bucket": "ecommerceapp-3f27d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397646487242:android:f0edef60446e3850a99e33",
+        "android_client_info": {
+          "package_name": "com.etlaaproject1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCivE5avj_cTaXml6g53AxyffPyezgIj1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397646487242:android:fbf9fb0a186be747a99e33",
+        "android_client_info": {
+          "package_name": "com.example.etlaafinalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCivE5avj_cTaXml6g53AxyffPyezgIj1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

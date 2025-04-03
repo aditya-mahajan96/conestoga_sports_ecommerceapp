@@ -1,0 +1,55 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Required for Firebase integration
+}
+
+android {
+    namespace = "com.example.etlaafinalproject"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.etlaafinalproject"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        multiDexEnabled true // Enables MultiDex support
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Firebase BOM (manages Firebase library versions)
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+
+    // Firebase Realtime Database
+    implementation 'com.google.firebase:firebase-database'
+
+    // MultiDex support
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
+
+// Apply the Google Services plugin for Firebase integration
+apply plugin: "com.google.gms.google-services"
